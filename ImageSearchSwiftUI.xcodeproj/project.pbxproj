@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		18BD22AB25343AF50015E121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD22AA25343AF50015E121 /* ContentView.swift */; };
 		18BD22AD25343AF60015E121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD22AC25343AF60015E121 /* Assets.xcassets */; };
 		18BD22B025343AF60015E121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD22AF25343AF60015E121 /* Preview Assets.xcassets */; };
+		18C51808253A842900C55F8C /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C51807253A842900C55F8C /* Document.swift */; };
+		18E4F48C253AB54700138653 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 18E4F48B253AB54700138653 /* KingfisherSwiftUI */; };
+		E0CAA2AEFC040E094C52332E /* Pods_ImageSearchSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D15026F82D0F0E49B79B1E /* Pods_ImageSearchSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		18BD22AC25343AF60015E121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BD22AF25343AF60015E121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18BD22B125343AF60015E121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C51807253A842900C55F8C /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		2D43933A65F102E15448E73C /* Pods-ImageSearchSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSearchSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ImageSearchSwiftUI/Pods-ImageSearchSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		A3D15026F82D0F0E49B79B1E /* Pods_ImageSearchSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageSearchSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61A1B52FEEFBFFF86D9C610 /* Pods-ImageSearchSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSearchSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ImageSearchSwiftUI/Pods-ImageSearchSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4F48C253AB54700138653 /* KingfisherSwiftUI in Frameworks */,
+				E0CAA2AEFC040E094C52332E /* Pods_ImageSearchSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,8 @@
 			children = (
 				18BD22A725343AF50015E121 /* ImageSearchSwiftUI */,
 				18BD22A625343AF50015E121 /* Products */,
+				60292455DF75BA395C208926 /* Pods */,
+				54433D93C4E86DA995ADFE2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 			children = (
 				18BD22A825343AF50015E121 /* ImageSearchSwiftUIApp.swift */,
 				18BD22AA25343AF50015E121 /* ContentView.swift */,
+				18C51807253A842900C55F8C /* Document.swift */,
 				18BD22AC25343AF60015E121 /* Assets.xcassets */,
 				18BD22B125343AF60015E121 /* Info.plist */,
 				18BD22AE25343AF60015E121 /* Preview Content */,
@@ -69,6 +81,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		54433D93C4E86DA995ADFE2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D15026F82D0F0E49B79B1E /* Pods_ImageSearchSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60292455DF75BA395C208926 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D61A1B52FEEFBFFF86D9C610 /* Pods-ImageSearchSwiftUI.debug.xcconfig */,
+				2D43933A65F102E15448E73C /* Pods-ImageSearchSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +105,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BD22B425343AF60015E121 /* Build configuration list for PBXNativeTarget "ImageSearchSwiftUI" */;
 			buildPhases = (
+				4B3E0155DD1CABCF43CE44D2 /* [CP] Check Pods Manifest.lock */,
 				18BD22A125343AF50015E121 /* Sources */,
 				18BD22A225343AF50015E121 /* Frameworks */,
 				18BD22A325343AF50015E121 /* Resources */,
+				4D0B5FB6A11E87686596428C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ImageSearchSwiftUI;
+			packageProductDependencies = (
+				18E4F48B253AB54700138653 /* KingfisherSwiftUI */,
+			);
 			productName = ImageSearchSwiftUI;
 			productReference = 18BD22A525343AF50015E121 /* ImageSearchSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 18BD229C25343AF50015E121;
+			packageReferences = (
+				18E4F48A253AB54700138653 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 18BD22A625343AF50015E121 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,12 +170,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B3E0155DD1CABCF43CE44D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageSearchSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0B5FB6A11E87686596428C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageSearchSwiftUI/Pods-ImageSearchSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageSearchSwiftUI/Pods-ImageSearchSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageSearchSwiftUI/Pods-ImageSearchSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18BD22A125343AF50015E121 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18BD22AB25343AF50015E121 /* ContentView.swift in Sources */,
+				18C51808253A842900C55F8C /* Document.swift in Sources */,
 				18BD22A925343AF50015E121 /* ImageSearchSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +344,7 @@
 		};
 		18BD22B525343AF60015E121 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61A1B52FEEFBFFF86D9C610 /* Pods-ImageSearchSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -280,12 +361,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instapay.ImageSearchSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18BD22B625343AF60015E121 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D43933A65F102E15448E73C /* Pods-ImageSearchSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instapay.ImageSearchSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -328,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18E4F48A253AB54700138653 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18E4F48B253AB54700138653 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18E4F48A253AB54700138653 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18BD229D25343AF50015E121 /* Project object */;
 }
